@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --orange-color: #f9a826;
+  --dark-gray-color: #46444c;
+  --light-gray-color: rgba(0, 0, 0, 0.3);
+  --bg-color: #f7f8fa;
+  --white-color: #fff;
+  --shadow: 1px 1px 6px 0 var(--light-gray-color);
+}
+
+html,
+body {
+  background-color: var(--bg-color);
+  height: 100vh;
+}
+
+.container {
+  height: 100vh;
+  padding: 2rem;
+}
+
+.title {
+  font-size: 18px;
+  color: var(--dark-gray-color);
+}
+
+.calendar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+input[type='date'] {
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: var(--shadow);
+  color: var(--light-gray-color);
+}
+
+input[type='date']::-webkit-inner-spin-button {
+  opacity: 0;
+}
+
+input[type='date']::-webkit-calendar-picker-indicator {
+  background: url('../../public/Vector.png') center/80% no-repeat;
+}
+
+table {
+  border-spacing: 0;
+  width: 100%;
+  /* padding: 0.5rem; */
+}
+
+/* TABLE */
+.grocery-table {
+  width: 100%;
+  background: var(--white-color);
+  /* margin: 1rem; */
+  padding: 0.5rem;
+  border-radius: 6px;
+  box-shadow: var(--shadow);
+}
+
+thead tr th {
+  border-bottom: 1px solid var(--light-gray-color);
+}
+
+thead th {
+  font-size: 14px;
+  color: var(--light-gray-color);
+  font-weight: normal;
+}
+
+tbody td {
+  text-align: center;
+  color: var(--dark-gray-color);
+}
+
+table tr td,
+th {
+  padding: 0.5rem;
+}
+
+.add-field {
+  border: none;
+  background: var(--white-color);
+  color: var(--orange-color);
+  font-weight: 600;
+  padding: 0.5rem;
+}
